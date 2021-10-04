@@ -1,4 +1,4 @@
-import React from "react";
+import Notes from "../components/Notes";
 
 const Home = () => {
   return (
@@ -6,11 +6,11 @@ const Home = () => {
       <h1>Add a Note</h1>
       <form>
         <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
-            Email address
+          <label htmlFor="exampleInputEmail1" className="form-label">
+            Note Title
           </label>
           <input
-            type="email"
+            type="text"
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
@@ -20,30 +20,21 @@ const Home = () => {
           </div>
         </div>
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
-            Password
+          <label htmlFor="exampleInputPassword1" className="form-label">
+            Description
           </label>
           <input
-            type="password"
+            type="text"
             className="form-control"
             id="exampleInputPassword1"
           />
         </div>
-        <div className="mb-3 form-check">
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
+
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>
-      <h1>Your Notes</h1>
+      <Notes />
     </div>
   );
 };
