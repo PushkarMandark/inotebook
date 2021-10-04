@@ -4,7 +4,7 @@ import Noteitem from "./Noteitem";
 const Notes = () => {
   const context = useContext(NoteContext);
   // eslint-disable-next-line
-  const { notes, setNotes } = context;
+  const { notes } = context;
 
   return (
     <div className="row my-5">
